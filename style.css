@@ -1,0 +1,110 @@
+@import url("./reset.css");
+@import url("./font.css");
+
+body{
+  background: #FCF3EB;
+}
+main{
+  width: 100%;
+  height: 100%;
+}
+
+/* header */
+header {
+  position: fixed;
+  width: 100%;
+  height: 75px;
+  background: rgba(254, 118, 60, 0.8);
+  z-index: 2;
+}
+header > div{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 1280px;
+  height: 75px;
+  margin: 0 auto;
+}
+header h1 {
+  font-family: RobotoSlab;
+}
+nav > div{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  font-family: NotosansKR;
+  font-weight: bold;
+  font-size: 20px;
+  font-size: 1.36rem;
+}
+nav a{
+  color: #000;
+}
+nav a:hover{
+  color: #fff;
+  border-bottom: 5px solid #3FA566;
+  transition: 0.2s;
+}
+
+#gnb{
+  display: none;
+}
+.trigger{
+  display: none;
+}
+
+/* figure */
+figure {
+  width: 100%;
+  height: 1000px;
+}
+#cover{
+  position: relative;
+  /* border: 10px solid #f00; */
+  height: 1000px;
+  top: 75px;
+}
+#cover_icon>span:first-child>i{
+  position: absolute;
+  font-size: 200px;
+  color: #F3C2CF;
+  top: 155px;
+  top: 9.688rem;
+  left: 80px;
+  left: 5rem;
+}
+#cover_icon>span:nth-child(2)>i{
+  position: absolute;
+  font-size: 200px;
+  color: #FE763C;
+  top: 439px;
+  top: 27.375rem;
+  left: 400px;
+  left: 25rem;
+}
+#cover_icon>span:nth-child(3)>i{
+  position: absolute;
+  font-size: 200px;
+  color: #3FA566;
+  bottom: 155px;
+  bottom: 9.688rem;
+  left: 80px;
+  left: 5rem;
+}
+#cover > h1{
+  position: absolute;
+  font-size: 130px;
+  top: 266px;
+  top: 16.625rem;
+  right: 80px;
+  right: 5rem;
+  font-family: RobotoSlab;
+  letter-spacing: 5px;
+}
+#cover_icon >img {
+  width: 400px;
+  height: 400px;
+}

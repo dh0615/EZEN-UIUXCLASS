@@ -1,0 +1,7 @@
+/* li > a:first-child {
+  color: red;
+} li에 있는 첫번째 a를 가리키므로 모든 a태그가 빨간색으로 출력됨*/
+
+li:first-child > a {
+  color: red;
+}

@@ -1,0 +1,21 @@
+/* 
+1. 체크박스의 클릭 여부에 따라서 아래 텍스트를 보여줄건인가 말것인가에 대한 반응 발생
+
+2. css 선택자로 checkbox를 선택해와야한다
+
+3. 선택자로 checkbox를 불러왔다면 속성을 파악해야한다
+
+4. 체크박스의 상태가 어떤 상태인지 확인
+
+5. 체크박스의 상태에 따라서 h , p 태그 결과값을 결정 
+*/
+input[type="checkbox"]:checked + div {
+  height: 0px;
+}
+div {
+  overflow: hidden;
+  width: 650px;
+  height: 300px;
+  transition-duration: 1s;
+}
+/* overflow : hidden > 눌렀을 때 0px이 되면 감추라는 뜻 */

@@ -1,0 +1,14 @@
+/* reset css */
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+a:visited {
+  color: #00f;
+}
+/* 방문한 이력이 있다면 파란색으로 표시 */
+a:link::after {
+  content: " - " attr(href);
+}

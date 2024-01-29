@@ -1,0 +1,110 @@
+@import url("./reset.css");
+
+body {
+  min-width: 760px;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px 15px;
+  /* background-color: #ccc; */
+}
+nav span {
+  font-size: 25px;
+  margin: 10px;
+  color: #979797;
+}
+#search {
+  position: relative;
+  padding: 0 150px;
+}
+#search span {
+  position: absolute;
+  font-size: 25px;
+  color: #03c75a;
+}
+#search input {
+  width: 100%;
+  height: 50px;
+  border-radius: 50px;
+  border: 2px solid #03c75a;
+}
+#search span:nth-of-type(1) {
+  top: 8px;
+  margin-left: 30px;
+}
+#search span:nth-of-type(2) {
+  top: 8px;
+  right: 230px;
+}
+#search span:nth-of-type(3) {
+  top: 8px;
+  right: 180px;
+}
+#icons .icon {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 150px;
+}
+.icon > li > a > img {
+  width: 30px;
+  height: 30px;
+  margin: 10px 10px 0 10px;
+}
+.icon > li > a > p {
+  text-align: center;
+  color: #979797;
+  font-size: 11px;
+  font-weight: bold;
+}
+/* section */
+#content {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+  margin: 30px auto;
+  overflow: hidden;
+}
+
+#content > #slides {
+  width: 100%;
+  float: left;
+  margin-left: 50px;
+}
+#slides img {
+  width: 100%;
+  float: left;
+  border: 1px solid #979797;
+  border-radius: 5px;
+}
+#content > #logon {
+  width: 40%;
+  float: right;
+  margin-right: 50px;
+  border: 1px solid #979797;
+  border-radius: 5px;
+}
+#login > p {
+  font-size: 12px;
+  text-align: center;
+}
+#login > a:nth-of-type(1) {
+  display: block;
+  background: #03c75a;
+  text-align: center;
+  height: 30px;
+  line-height: 30px;
+  color: #fff;
+  margin: 5px 0;
+}
+#login > a > span {
+  font-weight: bold;
+}
+#login > a:nth-of-type(2),
+#login > a:nth-of-type(3),
+#login > a:nth-of-type(4) {
+  font-size: 10px;
+  text-align: center;
+  color: #979797;
+}

@@ -1,0 +1,12 @@
+p::first-letter {
+  font-size: 48px;
+} /* 첫번째 알파벳 */
+
+p::first-line {
+  color: #f00;
+} /* 첫번째줄 */
+
+p::after {
+  content: "- " attr(data-page) " page";
+}
+/* 전후문자선택자를 쓰려면 반드시 content를 줘야함 */

@@ -1,0 +1,6 @@
+input:disabled {
+  background: orange;
+}
+input:enabled {
+  background: #0f0;
+}

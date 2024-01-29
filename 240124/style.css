@@ -1,0 +1,62 @@
+@import url("./reset.css");
+
+/* .box {
+  width: 100px;
+  height: 100px;
+  background: orange;
+}
+.box:active {
+  background: red;
+  transition: 2s;
+}
+ */
+
+#graph {
+  width: 610px;
+  border: 3px solid #000;
+}
+.bar {
+  width: 10px;
+  height: 50px;
+  background: orange;
+  margin: 5px;
+
+  transition-property: background, width;
+  transition-duration: 1s, 5s;
+  /* 색상은 1초 만에 바뀌고 너비값은 5초만에 바뀜 */
+  /* transition은 원본데이터에 주기 */
+}
+#graph:hover > .bar {
+  width: 600px;
+}
+#graph:hover > .bar:nth-child(1) {
+  background: red;
+  width: 100px;
+  /* transition-delay: 0s;
+  transition-timing-function: linear; */
+}
+#graph:hover > .bar:nth-child(2) {
+  background: blue;
+  width: 300px;
+  /* transition-delay: 1s;
+  transition-timing-function: ease; */
+}
+#graph:hover > .bar:nth-child(3) {
+  background: green;
+  width: 400px;
+  /* transition-delay: 2s;
+  transition-timing-function: ease-in; */
+}
+#graph:hover > .bar:nth-child(4) {
+  background: yellow;
+  width: 200px;
+  /* transition-delay: 3s;
+  transition-timing-function: ease-in-out; */
+}
+#graph:hover > .bar:nth-child(5) {
+  background: pink;
+  width: 400px;
+  /* transition-delay: 4s;
+  transition-timing-function: ease-out; */
+}
+/* cubic-bezier.com */

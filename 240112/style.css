@@ -1,0 +1,23 @@
+fieldset {
+  width: 280px;
+  margin-bottom: 20px;
+}
+div {
+  text-align: center;
+}
+label {
+  color: lightseagreen;
+  font-weight: bold;
+}
+#testbox {
+  width: 300px;
+}
+/* div 태그는 가로 전체를 다 쓰는 block태그인데 여기에 300px을 지정해주니까 그때 어디서부터 어디까지를 기준으로 가운데인지 정렬할 수 있게됨 */
+input {
+  text-align: center;
+}
+/* input > inline 인데 inline을 감싸안는 block 태그인 div를 줬기 때문에 display : block이나 inline-block을 따로 안써줘도됨
+
+inline을 block안에 넣어주는 것
+display를 이용해서 태생을 바꿔주는 것
+두가지 방법 */

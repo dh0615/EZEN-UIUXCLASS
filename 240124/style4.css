@@ -1,0 +1,60 @@
+body {
+  width: 700px;
+  height: 700px;
+  margin: 200px auto;
+  /*  border: 1px solid #f00; */
+  /* perspective: 500px; 원근감 */
+}
+
+section {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  animation: rint 3s linear 0s infinite;
+  transform-style: preserve-3d;
+  /* 자식요소가 가지고 있는 z축으로서의 공간감을 부모에게도 줘야 적용됨 */
+}
+
+@keyframes rint {
+  from {
+    transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+  }
+  to {
+    transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
+  }
+}
+
+div {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0.3;
+  backface-visibility: hidden;
+  /* 투과되는 뒤쪽에 있는 면은 감춰줌 */
+}
+div:nth-child(1) {
+  background: red;
+  transform: rotateY(0deg) translate3d(0, 0, 100px);
+}
+div:nth-child(2) {
+  background: green;
+  transform: rotateY(90deg) translate3d(0, 0, 100px);
+}
+div:nth-child(3) {
+  background: blue;
+  transform: rotateY(180deg) translate3d(0, 0, 100px);
+}
+div:nth-child(4) {
+  background: yellow;
+  transform: rotateY(270deg) translate3d(0, 0, 100px);
+}
+div:nth-child(5) {
+  background: brown;
+  transform: rotateX(90deg) translate3d(0, 0, 100px);
+}
+div:nth-child(6) {
+  background: pink;
+  transform: rotateX(270deg) translate3d(0, 0, 100px);
+}

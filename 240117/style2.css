@@ -1,0 +1,26 @@
+header {
+  width: 800px;
+  background: #f00;
+  margin: 0 auto;
+}
+section {
+  width: 800px;
+  margin: 0 auto;
+  overflow: hidden;
+  /* #aside와 #content만 float를 줘도 둘의 합이 800이 안되면 footer가 치고 올라옴 그래서 부모태그에 overflow:hidden을 넣어줘서 올라오지못하게 함 */
+}
+#aside {
+  width: 200px;
+  background: #00f;
+  float: left;
+}
+#content {
+  width: 400px;
+  background: #0f0;
+  float: left;
+}
+footer {
+  width: 800px;
+  margin: 0 auto;
+  background: teal;
+}

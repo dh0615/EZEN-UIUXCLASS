@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #two {
+        width: 500px;
+        text-align: center;
+        /* 그냥 이렇게만 주면 안먹음 .. span이 inline태그니까 */
+      }
+      .inline {
+        width: 500px;
+        text-align: center;
+        display: inline-block;
+        /* 이거 주면 태생이 inline이었는데 inline의 태생과 block의 역할을 모두 갖게됨 */
+      }
+    </style>
+  </head>
+  <body>
+    <div>Lorem ipsum</div>
+    <div>Lorem ipsum</div>
+    <div>Lorem ipsum</div>
+    <div>Lorem ipsum</div>
+    <span id="two">Lorem ipsum</span>
+    <span>Lorem ipsum</span>
+    <span>Lorem ipsum</span>
+    <span>Lorem ipsum</span>
+    <span>Lorem ipsum</span>
+    <span class="inline">Lorem ipsum</span>
+    <span class="inline">Lorem ipsum</span>
+    <!-- class / id 역할은 똑같음 (선택해서 불러오고자 하는 역할) 
+    id는 중복해서 사용할 수 없음
+    class는 중복 가능
+    똑같은 속성을 주고 싶은데 id만 있으면 이름을 다 다르게 지어줘야 하는 비효율성
+    class는 복수의 여러개의 요소에 같은 스타일을 주고 싶을 때 사용 -->
+  </body>
+</html>
+<!-- div = block태그 태생적으로 한줄을 다 차지함 
+span = inline 태그 가로로 다같이 배치됨-->

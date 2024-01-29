@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+body {
+  width: 100%;
+}
+#header {
+  background: green;
+  color: #fff;
+  height: 150px;
+  text-align: center;
+}
+#section {
+  display: flex;
+  flex-direction: row;
+}
+#section article {
+  flex: 2;
+  background: #ccc;
+  height: 150px;
+}
+#section aside {
+  flex: 1;
+  background: #8d8d8d;
+}
+#section nav {
+  flex: 1;
+  background: #7c7c7c;
+}
+footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  height: 150px;
+}

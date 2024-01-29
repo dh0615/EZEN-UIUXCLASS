@@ -1,0 +1,52 @@
+/* body {
+  background: greenyellow;
+}
+
+div {
+  width: 100px;
+  height: 100px;
+  background: #000;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+ */
+
+/* body {
+  background: yellowgreen;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+}
+div {
+  width: 100px;
+  height: 100px;
+  background: #000;
+} */
+
+.parent {
+  border: 5px solid #0f0;
+  height: 500px;
+  display: flex;
+  /* justify-content: space-around; */
+  /* align-items: center; */
+  align-items: stretch; /* 부모요소의 높이값만큼 가져가겠다는 뜻 */
+}
+.parent div {
+  width: 300px;
+  /*  height: 100px; */
+  /* line-height: 100px; */
+  background: crimson;
+  color: #fff;
+  text-align: center;
+  margin: 5px;
+}
+.child1 {
+  /* height: 100px; */
+}
+/* .child2 {
+  height: 200px;
+}
+ */

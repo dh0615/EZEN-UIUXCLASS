@@ -1,0 +1,25 @@
+.parent {
+  border: 5px solid green;
+  display: flex;
+}
+.parent div {
+  width: 100px;
+  height: 50px;
+  background: crimson;
+  color: #fff;
+  text-align: center;
+}
+/* .child1 {
+  margin-right: auto;  자식요소에서 margin을 주려면 부모요소에 margin이 있으면 안됨 
+}*/
+
+/* .child1,
+.child2,
+.child3 {
+  margin: auto;
+} = space-around */
+
+.child2 {
+  margin: auto;
+}
+/* = space-between */

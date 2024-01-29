@@ -1,0 +1,7 @@
+/* table > tr > th {
+  color: #f00;
+}
+table 은 기본적으로 thead tbody tfoot이라는 시맨틱태그가 들어가있어서 이렇게 쓰면 스타일이 적용이 안됨 */
+table > tbody > tr > th {
+  color: #f00;
+}

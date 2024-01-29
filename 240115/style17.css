@@ -1,0 +1,80 @@
+/* p:nth-child(2) {
+  font-size: 100%;
+}
+p:nth-child(3) {
+  font-size: 150%;
+}
+p:nth-child(4) {
+  font-size: 200%;
+} */
+/* p:nth-child(2) {
+  font-size: 1em;
+}
+p:nth-child(3) {
+  font-size: 1.5em;
+}
+p:nth-child(4) {
+  font-size: 2em;
+} */
+/* p:nth-child(2) {
+  font-size: 16px;
+}
+p:nth-child(3) {
+  font-size: 24px;
+}
+p:nth-child(4) {
+  font-size: 32px;
+} */
+/*
+* {
+  font-size: 12px;
+}
+h1 {
+  font-size: 3em;
+}
+h2 {
+  font-size: 1.5em;
+}
+ 전체선택자로 글자 크기 정해줌 */
+
+* {
+  font-size: 30px;
+}
+div {
+  font-size: 20px;
+}
+/* css에서 스타일이 중복되어서 적용되는 경우, 우선적용순위가 존재
+
+0. 전체 선택자로 스타일이 적용되어 경우
+1. 속성값 뒤에 !important가 붙어있는 경우
+(* 외부스타일값과 중복되었을 경우 -> 제이쿼리 외부플러그인 CSS vs 내가 직접 CSS)
+2. 태그에 직접 css 스타일값을 적용하는 경우
+(인라인 스타일시트를 적용하는 경우)
+(*table border=)
+3. 선택자 중에서 id로 작성된 경우
+4. 선택자 중에서 class로 작성된 경우
+5. 선택자를 태그로 지정해서 스타일을 적용한 경우
+6. 부모요소에 의해서 상속된 경우
+*/
+/* p {
+  color: #00f !important;
+}
+p {
+  color: #f00;
+}
+ */
+/* #my-box {
+  color: #f00;
+}
+.text {
+  color: #000;
+} */
+/* 부모에 의해 상속된 경우 = 6순위
+선택자를 class로 작성한 경우 4순위 */
+#my-box .text {
+  color: #f00;
+}
+.black {
+  color: #000;
+}
+/* ID 3순위 class 4순위라서 아이디가 우선 */

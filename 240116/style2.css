@@ -1,0 +1,11 @@
+body {
+  background-image: url("https://cdnimg.melon.co.kr/cm2/artistcrop/images/002/61/143/261143_20210325180240_org.jpg?61e575e8653e5920470a38d1482d7312/melon/optimize/90");
+  background-repeat: no-repeat;
+  /* css의 url함수로 이미지를 가져오면 기본 디폴트 값이 반복이기 때문에 no-repeat를 넣어줘야됨 */
+  background-position: top;
+  background-size: cover;
+  /* 이렇게 하나하나 쓰는게 번거로움 */
+
+  background: url("https://cdnimg.melon.co.kr/cm2/artistcrop/images/002/61/143/261143_20210325180240_org.jpg?61e575e8653e5920470a38d1482d7312/melon/optimize/90")
+    top/cover no-repeat;
+}

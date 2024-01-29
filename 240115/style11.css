@@ -1,0 +1,10 @@
+h1:first-of-type {
+  color: #f00;
+}
+h2:last-of-type {
+  color: #00f;
+}
+h3:first-of-type {
+  color: #0f0;
+}
+/* 동일한 형태를 가진 것 중에서 몇번째인지 */

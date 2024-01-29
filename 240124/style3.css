@@ -1,0 +1,16 @@
+section {
+  width: 100px;
+  height: 100px;
+  border: 5px solid #000;
+  margin: 100px;
+}
+div {
+  width: 100px;
+  height: 100px;
+  background: #f00;
+  /* transform: rotate(60deg) scale(1.2) skewY(10deg); */
+  /* transform: rotate(60deg) translateX(50px);
+  어떠한 속성이 먼저 오느냐에 따라 결과값이 달라질 수 있다 */
+  transform: rotate(60deg);
+  transform-origin: 100% 100%;
+}

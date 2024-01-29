@@ -1,0 +1,10 @@
+div {
+  width: 100px;
+  height: 100px;
+  background: #f00;
+  border: 20px solid #000;
+  margin: /* 0  상하값  10px  좌우값 */ 
+  /* 10px 상 0 좌우 10px 하; */ 10px
+    20px 30px 40px; /*  위쪽부터 시계방향; */
+  padding: 10px 20px 30px 40px;
+}

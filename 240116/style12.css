@@ -1,0 +1,41 @@
+/* div {
+  border: 3px solid #000;
+  box-shadow: 0px 0px 5px #000;
+  text-align: center;
+}
+h1 {
+  color: #fff;
+  text-shadow: 0px 0px 5px #000;
+}
+ */
+div {
+  width: 500px;
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+  margin: 0 auto;
+  /* background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom color-stop(1%,#f85032 
+    color-stop(50%, #f16f5c ),
+    color-stop(1%, #f6290c ),
+    (100%, #e73827) */
+      /* background: linear-gradient(
+    to bottom,
+    #f85032 1%,
+    #f16f5c 50%,
+    #f6290c 1%,
+    #e73827 100% */
+      /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ebe9f9+0,d8d0ef+50,cec7ec+51,c1bfea+100;Purple+3D+%231 */
+      background:
+      linear-gradient(
+        to bottom,
+        #ebe9f9 0%,
+        #d8d0ef 50%,
+        #cec7ec 51%,
+        #c1bfea 100%
+      )
+      ; /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  );
+}

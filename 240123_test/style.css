@@ -1,0 +1,115 @@
+@import url("./reset.css");
+
+body {
+  width: 490px;
+  margin: 0 auto;
+}
+
+#main_header {
+  position: relative;
+  width: 100%;
+  height: 40px;
+  display: flex;
+}
+
+#main_header > #left {
+  position: absolute;
+  font-size: 20px;
+  left: 30px;
+  height: 40px;
+  line-height: 40px;
+  color: #5d5d5d;
+}
+#main_header > p {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  font-weight: bold;
+  text-align: center;
+  font-size: 20px;
+}
+#main_header > #right {
+  position: absolute;
+  font-size: 20px;
+  right: 30px;
+  height: 40px;
+  line-height: 40px;
+  color: #5d5d5d;
+}
+#main_header > #right > span {
+  margin-left: 10px;
+}
+/* nav */
+#nav_menu {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+  font-weight: bold;
+}
+
+#nav_menu > p > a {
+  color: #5d5d5d;
+}
+#nav_menu > p:first-child > a {
+  color: #4adbff;
+}
+#nav_menu > p:nth-child(2) > a {
+  color: #000;
+}
+
+/* section */
+#main {
+  position: relative;
+  background-image: url("./list65adc80ca72d7.jpg");
+  width: 490px;
+  height: 490px;
+}
+#main_cont {
+  position: absolute;
+  bottom: 40px;
+}
+#main h1 {
+  color: #fff;
+  display: block;
+  width: 490px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+}
+#main p {
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+#main span {
+  color: #fff;
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  width: 80px;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.4);
+}
+#main_bottom > p {
+  font-weight: bold;
+  background-color: #ffa5b4;
+  height: 50px;
+  line-height: 50px;
+  padding-left: 20px;
+}
+#icons_top {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+.icon {
+  width: 80px;
+  height: 80px;
+  background: #ccc;
+  border-radius: 10px;
+  font-size: 15px;
+  text-align: center;
+}

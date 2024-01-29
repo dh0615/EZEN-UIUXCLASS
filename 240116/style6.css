@@ -1,0 +1,23 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+.box {
+  /* border-width: 1px;
+  border-style: solid;
+  border-color: #000; */
+  border: 5px solid #000; /* dotted, dashed */
+  border-radius: 10px 20px 30px 40px;
+  width: 300px;
+  text-align: center;
+  padding: 10px 0;
+}

@@ -1,0 +1,16 @@
+.parent {
+  border: 5px solid green;
+  height: 400px;
+  display: flex;
+  flex-flow: row wrap;
+  /* align-items: center;  > 위치해있는 각각의 요소에서 독립적으로 센터를 잡음*/
+  align-content: space-around;
+}
+.parent div {
+  width: 100px;
+  height: 100px;
+  margin: 5px;
+  background: crimson;
+  color: #fff;
+  text-align: center;
+}

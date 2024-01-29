@@ -1,0 +1,80 @@
+1. css3 심화내용 
+- 정적인 형식의 css문법
+(* 레이아웃 정렬 / 선택자 / 스타일적용 )
+
+- 애니메이션
+> 변형 : transition (* 시간의 제약을 가지고 무언가의 변화를 일으키는 것)
+1) transition-duration : 특정시간동안 변형효과를 적용하고자 할때 사용한다
+2) transition-delay : 특정시간의 지연효과를 적용하고자 할 때
+3) transition-timing-function : 가.감속 효과를 적용하고자 할 때
+4) transition-property : 특정요소의 변형값을 상이하게 적용하고자 할 때
+= > 한번에 모두 사용하고 싶다면
+  => transition : property duration timing-function delay 순으로
+
+♣ 보통은 transition: all 0.3s 이런식으로 줌 ~.~.. 모든 속성 공통적으로 0.3초를 주겟다
+
+
+>> animation
+animation-name: rint; (이름은 임의로 지정 가능)
+animation-duration: 2s;
+animation-iteration-count: infinite; 계속 반복재생
+animation-timing-function: ease-in;
+animation-direction: alternate; 효과따라 다시 되돌아가게
+= > 한번에 모두 사용하고 싶다면
+  = > animation : name / duration / function / delay / count / direct  순으로..
+
+
+CSS에서 @ 
+- @import
+- @font-face
+- @keyframes
+
+
+> 변환 : transform (* 시간의 제약과는 무관하게 무언가가 변화를 일으키는 것)
+- 어떤 요소의 회전값을 적용 : rotate
+- 어떤 요소의 위치값을 적용 : translate
+- 어떤 요소의 사이즈값을 적용 : scale
+- 어떤 요소의 기울기값을 적용 : skew
+
+
+=> 위 3가지 요소가 한번에 같이 사용된느 경우 !!
+ : 3D입체 도형을 만들고자할 때
+
+
+
+
+
+
+https://nodejs.org/en에 가서 LTS노드 설치하기
+파이어베이스 홈페이지
+hosting탭으로 이동
+파이어베이스 호스팅설정에서 하라는대로하기..
+
+1. firebase CLI 설치
+명령 프롬프터 관리자 권한으로 실행
+npm install -g firebase-tools 입력
+
+2. 프로젝트 초기화
+배포하고자하는 파일에 들어가서 code실행
+git bash말고 그 아래에 있는 command prompt창 열기
+google에 로그인 아래에 있는 문장 복붙
+프로젝트 시작에 있는 문장 복붙,,
+hosting : configure~문장 방향키로 선택후 스페이스바로 선택 후 엔터
+use an existing~ 선택 
+원하는 프로젝트 선택 후 엔터
+what do you want ~ 나오면 public 입력 
+configure~ : no입력
+set up automatic ~ : no입력
+탐색기에 새로운 폴더랑 파일들 생김
+public 폴더 속 404.html, index.html 삭제하고 그 public 폴더 안에 배포하고자 하는 데이터 모두 복붙하기
+index.html 마지막으로 확인하기
+firebase홈페이지 3단계 firebase 호스팅에 배포에 있는 firebase deploy 복붙,, 그러면 끝~.~
+ctrl이랑 링크 누르면 링크 확인 가능
+
+
+public 폴더 안에 폰트 이미지 이런거 말고 다른 파일 넣으면 안됨,,
+
+html파일에 다른 숫자나 이름 // index2.html 이런거 넣으면 인식 못함,, 순수한 index.html 만 올릴 수 있음
+
+수정할 때는 firebase deploy만 다시 해주면 됨
+

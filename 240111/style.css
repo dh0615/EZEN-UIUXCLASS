@@ -1,0 +1,8 @@
+table,
+td {
+  border: 1px solid #000;
+  border-collapse: collapse; /* 겹쳐지는 선을 하나로 묶어줌 */
+}
+tr > td:nth-child(even) {
+  width: 300px;
+}

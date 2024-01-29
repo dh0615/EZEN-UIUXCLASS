@@ -1,0 +1,22 @@
+.button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 90px;
+  background: #ff6a00;
+  border: 10px solid #fff;
+  border-radius: 30px;
+  box-shadow: 0px 0px 5px #a9a9a9;
+  text-align: center;
+}
+a {
+  display: block;
+  /* line-height: 35px; line-height가 무조건 가운데로 정렬해주는건 아님 // 글자 자체의 높이를 70으로 주면서 가운데로 오게하는거라서 만약에 html파일에서 글자 요소를 여러개를 주면 글자가 넘치고 가운데로 배치 안됨 */
+  text-decoration: none;
+  font-size: 32px;
+  font-style: italic;
+  color: #fff; /* inherit;  부모요소로부터 상속 > 색상 안줬으니까 디폴트값인 검정색이 들어감 */
+  font-weight: bold;
+}

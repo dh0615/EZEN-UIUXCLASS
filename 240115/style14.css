@@ -1,0 +1,5 @@
+p::selection {
+  background: #f00;
+  color: #fff;
+}
+/* 드래그하면 빨간배경에 */

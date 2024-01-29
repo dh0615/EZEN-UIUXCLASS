@@ -1,0 +1,19 @@
+/* reset css */
+@import url("./reset.css");
+
+/* body {
+  background: url("./roblox.png") no-repeat fixed;
+} */
+#content {
+  width: 600px;
+  margin: 0 auto;
+  border: 1px solid #00f;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+#content > h1 {
+  text-align: center;
+  color: white;
+  margin: 10px 0;
+}
+#main_section {
+}

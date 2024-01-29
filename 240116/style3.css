@@ -1,0 +1,22 @@
+#box {
+  /* display: block;
+   어떠한 요소를 보여주고자 할 때 */
+  /* display: none; */
+  /* visibility: hidden;
+   display: none; 하면 흔적도 없이 사라짐 // 공간도 사라짐
+  visibility는 사라지지만 존재에 대한 영역은 남아있음*/
+
+  /* display: inline;
+  div태그인 box는 block이었는데 inline으로 주니까 한줄로 쭉 배치 */
+
+  /* display: inline;
+  display: inline-block;
+  하나의 행 안에 들어올 수 있는 모든 요소들과 나눠쓰려는 속성이 있어서 디자이너가 준 width값도 무시해버림 
+  inline-block을 주면 하나의 행에 요소들을 나눠쓰면서 너비값도 준수함*/
+  display: inline-block;
+  background: rgba(255, 0, 0, 0.5);
+  width: 300px;
+  height: 50px;
+  margin: 10px;
+  /* opacity: 0.5; rgba를 이용해서 불투명도를 조절하는 경우가 더 많음 // div안에 있는 모든 요소가 불투명해지기 때문에 */
+}

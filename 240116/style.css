@@ -1,0 +1,9 @@
+h1 {
+  color: #f00;
+}
+p {
+  /* background: rgb(0, 0, 0); 16진법 컴퓨터 16*16=256 컴퓨터는 0부터 세니까 255가 최대 */
+  /* background: rgba(0, 0, 0, 0.2); a = 투명도 */
+  /* background: hsl(33, 100%, 50%); */
+  background: #4fb5cf;
+}

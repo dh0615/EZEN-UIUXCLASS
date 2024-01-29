@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  height: 100vh;
+}
+#container {
+  display: flex;
+}
+#container2 {
+  width: 100%;
+}
+nav {
+  background: #ddd;
+  width: 150px;
+  height: 100vh;
+}
+
+header {
+  background: teal;
+  height: 150px;
+}
+section {
+  display: flex;
+}
+article {
+  flex: 2;
+  background: pink;
+}
+aside {
+  flex: 1;
+  background: yellow;
+}
+article,
+aside {
+  height: calc(100vh - 300px);
+}
+footer {
+  background: #bbb;
+  height: 150px;
+}

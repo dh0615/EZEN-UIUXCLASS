@@ -1,0 +1,32 @@
+/* input[type="text"] {
+  background: #f00;
+}
+input[type="password"] {
+  background: #00f;
+}
+ 아이디를 안줘도 대괄호 안에 원하는 요소를 써주면 지정가능 */
+
+img[src$="png"] {
+  border: 4px solid #f00;
+}
+
+img[src$="jpg"] {
+  border: 4px solid #00f;
+}
+
+#header > h1 {
+  color: #0f0;
+}
+/* 자손선택자에게는 > 써줌 */
+
+/* #header > ul > li {
+  color: #00f;
+}
+ 자손들을 하나하나 쓰는게 불편..
+ 문서 안 태그들의 상관관계가 자손 후손 선택자가 많은 경우는 이렇게 씀 */
+
+#header li > a {
+  color: #00f;
+}
+/* 후손선택자를 바로 데려올 때는  > 안쓰고 그냥 바로 씀 
+효율적이지만 id가 아니라 class를 썼을 때는 중복으로 적용될 수도 있기 때문에 유념하여 써야 함*/

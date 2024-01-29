@@ -1,0 +1,11 @@
+/* #header > h1 {
+  color: #f00;
+} 자손만 선택 */
+#header h1 {
+  color: #f00;
+}
+/* 자손,후손 둘 다 선택 */
+
+#section h1 {
+  color: #00f;
+}

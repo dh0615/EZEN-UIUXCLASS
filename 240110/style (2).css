@@ -1,0 +1,80 @@
+@font-face {
+  font-family: "Kakao";
+  src: url("./font/KakaoBig-Regular-v1.0.4bf7d77.ttf");
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  /* a태그 클릭했을 때 빨간색으로 바꾸지 않게 부모 요소의 색상을 그대로 상속받도록 함 */
+}
+
+body {
+  font-family: Kakao;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#container {
+  width: 428px;
+  height: 926px;
+  background: #fae100;
+}
+
+header {
+  margin-top: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-size: 20px;
+  /* 가운데 설정을 이렇게 하면 gap으로 간격을 줄 수 있다 */
+}
+section {
+  margin-top: 110px;
+  margin-bottom: 178px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+section div {
+  color: #4833cc;
+  font-size: 18px;
+}
+section article {
+  display: flex;
+  flex-direction: row; /* 가로로 정렬하기 위해 */
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+footer button {
+  font-family: Kakao;
+  width: 368px;
+  height: 60px;
+  border: none;
+  border-radius: 5px;
+  background: #f5efef;
+  font-size: 20px;
+}
+footer button:hover {
+  background: transparent;
+  border: 1px solid #fff;
+}
+footer div {
+  display: flex;
+  gap: 37px;
+}

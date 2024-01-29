@@ -1,0 +1,16 @@
+body {
+  /* background-image: url("./img/BackgroundFront.png"),
+    url("./img/BackgroundBack.png");
+   background-image : 이미지 중첩해서 불러오기 가능 */
+
+  /* background-size: 100% 250px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  이미지는 고정값이고 텍스트만 움직임 
+  background-position: 0 50%;
+  background-color: #e7e7e7;*/
+
+  /* <bg-layer> = <bg-image> || <bg-position> [ / <bg-size> ]? || <repeat-style> || <attachment> || <visual-box> || <visual-box> 이 순서 지키기 */
+  background: url("./img/BackgroundFront.png") bottom/100% no-repeat fixed,
+    url("./img/BackgroundBack.png") bottom/100% no-repeat fixed;
+}

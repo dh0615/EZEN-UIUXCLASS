@@ -1,0 +1,31 @@
+body > div {
+  width: 400px;
+  height: 100px;
+  border: 3px solid black;
+  position: relative;
+  overflow-y: scroll; /* 하단 스크롤바 없어짐 */
+}
+.box {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  /* 파란상자만 남고 파란 박스가 제일 위에 올라옴 */
+}
+.red {
+  background: #f00;
+  left: 10px;
+  top: 10px;
+  z-index: 10; /* z축의 개념 z축이 클 수록 가깝다는 의미 */
+}
+.green {
+  background: #0f0;
+  left: 50px;
+  top: 50px;
+  z-index: 5;
+}
+.blue {
+  background: #00f;
+  left: 90px;
+  top: 90px;
+  z-index: 1;
+}

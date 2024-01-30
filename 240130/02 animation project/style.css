@@ -1,0 +1,181 @@
+@import url("./reset.css");
+
+@import url("https://fonts.googleapis.com/css2?family=Poiret+One&display=swap");
+/* common */
+body {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background: #b1e1e2; /* 기본 색상은 빼면 안됨,, 새고 하고 직후에는 아무 색이 안나올 수 도 있으니까.. */
+  animation: sky linear 20s infinite;
+}
+@keyframes sky {
+  0% {
+    background: #b88fcc;
+  }
+  25% {
+    background: #b1e1e2;
+  }
+  50% {
+    background: #fcd2e2;
+  }
+  75% {
+    background: #636888;
+  }
+  100% {
+    background: #b08fcc;
+  }
+}
+
+h1 {
+  width: 1000px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 150%);
+  text-align: center;
+  color: #fff;
+  font: bold 92px/1 "Poiret One";
+  animation: day linear 20s infinite;
+}
+@keyframes day {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/* section */
+section {
+  width: 1000px;
+  height: 400px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  /* 그냥 여기까지만 주면 도형의 중앙이 아닌 왼쪽상단 꼭짓점이 가운데로 와서 translate로 이동시켜줘야함
+  display : flex >> 부모요소에 주기.. */
+  transform: translate(-50%, -70%);
+}
+section .sky {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+section .sky .sun {
+  position: absolute;
+  top: -150px;
+  left: 50%;
+  margin-left: -100px;
+  transform-origin: center 500px; /* 중심점을 안잡아주면 태양이 제자리에서만 돈당,, 중심점을 잡아주기 위해서 transform-origin */
+  /* 중심점의 y축을 500px만큼 내려줌 */
+  animation: sun linear 20s infinite;
+}
+@keyframes sun {
+  0% {
+    opacity: 0;
+    transform: rotate(-90deg);
+  }
+  25% {
+    opacity: 1;
+    transform: rotate(-30deg);
+  }
+  50% {
+    opacity: 1;
+    transform: rotate(30deg);
+  }
+  75% {
+    opacity: 0;
+    transform: rotate(90deg);
+  }
+  100% {
+    opacity: 0;
+    transform: rotate(-90deg);
+  }
+}
+section .sky .cloud1 {
+  position: absolute;
+  top: -30px;
+  left: 10%;
+  animation: flow linear 10s infinite;
+}
+section .sky .cloud2 {
+  position: absolute;
+  top: 20px;
+  left: 0;
+  animation: flow linear 20s infinite;
+}
+
+section .town .circle {
+  position: absolute;
+  bottom: 104px;
+  left: 50%;
+  margin-left: -165px;
+  animation: rotation linear 20s infinite;
+}
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+section .town .night {
+  position: absolute;
+  bottom: 0;
+  left: 40px;
+}
+section .town .day {
+  position: absolute;
+  bottom: 0;
+  left: 40px;
+  animation: day linear 20s infinite;
+}
+section .people {
+  width: 100%;
+  height: 100%;
+  position: absolute; /* 사람이 움직이는 반경을 명확하게 정하기 위해서 부모요소임에도 불구하고 absolute를 줌 */
+  top: 0; /* 부모가 가운데 가있어서 */
+  left: 0;
+  border: 1px solid #f00;
+  animation: day linear 20s infinite;
+}
+section .people .man {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  animation: flow linear 10s infinite;
+}
+section .people .family {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  animation: flow linear 20s infinite;
+}
+@keyframes flow {
+  0% {
+    left: 0;
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    left: 90%;
+    opacity: 0;
+  }
+}

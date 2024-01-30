@@ -1,1 +1,29 @@
 @import url("./reset.css");
+
+@import url("./font.css");
+
+/* === mobile === */
+
+#wrap {
+  width: 100%;
+}
+
+header {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.header .logo {
+  float: left;
+}
+
+.header .logo a {
+  font-size: 30px;
+}
+
+.header .gnb {
+  /* display: none; */
+  position: absolute;
+}

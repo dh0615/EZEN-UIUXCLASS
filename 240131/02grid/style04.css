@@ -1,0 +1,11 @@
+.face-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  /* user가 보는 디바이스에 맞춰 가득 채우라는 뜻 */
+  /* 최소 300px, 최대 1fr */
+  grid-gap: 5px;
+}
+
+.face-gallery img {
+  width: 100%;
+}

@@ -1,0 +1,27 @@
+.parent {
+  border: 5px solid #000;
+  width: 900px;
+  height: 300px;
+  display: grid;
+  grid-template-columns: auto auto;
+  /* justify-items: center; */
+  /* justify-content: center; */
+  /* align-items: center; */
+  /* align-content: space-around; */ /* 해당 컨텐츠를 하나의 묶음으로 보고 가운데로 배치 */
+  justify-items: center;
+  align-items: center;
+  grid-gap: 10px;
+}
+.parent div {
+  background: darkkhaki;
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+  color: #fff;
+  font-size: 30px;
+}
+.parent div:nth-child(2) {
+  justify-self: end;
+  align-self: end;
+}

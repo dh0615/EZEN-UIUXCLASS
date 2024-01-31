@@ -1,0 +1,48 @@
+/* variable */
+/* $primary: royalblue;
+
+$confirm: yellowgreen;
+$danger: crimson;
+$btn-padding: 10px 30px;
+
+.btns {
+  text-align: center;
+  .btn {
+    border: none;
+    padding: $btn-padding;
+    border-radius: 5px;
+    text-transform: uppercase;
+    color: #fff;
+  }
+  .primary {
+    background: $primary;
+  }
+  .secondary {
+    background: $confirm;
+  }
+  .accent {
+    background: $danger;
+  }
+  .optional {
+    background: $primary;
+  }
+}
+ */
+.heading {
+  text-align: center;
+  position: relative;
+  padding-bottom: 12px;
+}
+.heading span {
+  color: royalblue;
+}
+.heading::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 4px;
+  background: crimson;
+}/*# sourceMappingURL=style.css.map */

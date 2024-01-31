@@ -1,0 +1,29 @@
+.parent {
+  border: 5px solid #000;
+  background: paleturquoise;
+  height: 300px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 10px;
+}
+
+.parent div {
+  color: #555;
+  border: 1px solid #555;
+  text-align: center;
+  font-size: 30px;
+}
+.item1 {
+  background: plum;
+  grid-column: 1 / span 2;
+  grid-row: 1; /* row값을 정해주지 않으면 item2가 첫번째 행부터 시작해서 두개의 공간을 준다는 것을 인식시켜줬을 때 치고 올라오지않음 */
+  /* 첫번째 아이템이 정리된 후에 item2가  두개의 공간을 가져가게끔해줌 */
+}
+.item2 {
+  background: papayawhip;
+  grid-row: 1 / span 2;
+}
+.item5 {
+  background: pink;
+  grid-column: 1 / span 3;
+}

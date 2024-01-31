@@ -1,0 +1,45 @@
+.parent {
+  border: 5px solid #000;
+  display: grid;
+  grid-gap: 5px;
+  grid-template-columns: auto auto auto;
+}
+
+.parent div {
+  padding: 10px;
+  text-align: center;
+  font-size: 30px;
+  background: lightblue;
+  border: 1px solid #000;
+}
+
+.parent div:nth-child(1) {
+  order: 6;
+}
+/*.parent div:nth-child(1) {
+  order: 1;  order주지 않으면 순서 영향 안받음,, 이렇게만 주면 이게 제일 마지막으로 감 */
+
+.parent div:nth-child(2) {
+  order: 5;
+}
+.parent div:nth-child(3) {
+  order: 4;
+}
+.parent div:nth-child(4) {
+  order: 3;
+}
+.parent div:nth-child(5) {
+  order: 2;
+}
+.parent div:nth-child(6) {
+  order: 1;
+}
+/* .item1 {
+  background: crimson;
+  grid-row: 2; 전체 순서의 2번째로 가게해줌
+}
+
+.item2 {
+  background: yellowgreen;
+  grid-row: 4;
+} */

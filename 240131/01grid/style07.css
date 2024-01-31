@@ -1,0 +1,21 @@
+.parent {
+  background-color: khaki;
+  border: 5px solid #000;
+  display: grid;
+  /* grid-template-areas: "item item . . .";
+ 하나의 행에 5개를 주고 싶음 + item 이름 갖고 있는 애로 병합 + 나머지는 빈자리 채우기,, */
+  /*grid-template-areas: "item item . . ." "item item . . ."  2개의 행 2개의 열 병합하고 싶을 때.. */
+  grid-template-areas: ". . . item item" ". . . item item";
+}
+
+.parent div {
+  padding: 10px;
+  text-align: center;
+  font-size: 30px;
+  border: 1px solid #000;
+}
+
+.item {
+  background: crimson;
+  grid-area: item;
+}

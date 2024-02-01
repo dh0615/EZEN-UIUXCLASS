@@ -1,0 +1,24 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+%shape {
+  width: 250px;
+  height: 300px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+/* % >> 굳이 존재하지 않는 가상클래스를 생성하지 않게해줌  */
+.card {
+  display: flex;
+  gap: 30px;
+  &-item {
+    @extend %shape;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

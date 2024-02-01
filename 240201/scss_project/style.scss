@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #222;
+}
+
+.heart-beat {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  background: #ff4757;
+  transform: rotate(
+    45deg
+  ); /* transform 특 > 뒤에 transform을 또 써주면 원래대로 돌아가기 때문에 뒤쪽에 있는 transform에도 rotate를 적용시켜줘야 한다*/
+  animation: heart 0.5s linear infinite;
+  box-shadow: 0 -10px 100px #ff4757, 0 -10px 150px #ff4757,
+    0 -10px 200px #ff4757;
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    background: inherit;
+    border-radius: 100%;
+  }
+  &::before {
+    top: -50%;
+  }
+  &::after {
+    left: -50%;
+  }
+
+  @keyframes heart {
+    0% {
+      transform: rotate(45deg) scale(1);
+    }
+    50% {
+      transform: rotate(45deg) scale(1.05);
+    }
+    100% {
+      transform: rotate(45deg) scale(0.95);
+    }
+  }
+}

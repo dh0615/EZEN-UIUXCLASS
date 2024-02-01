@@ -1,0 +1,10 @@
+.frame {
+  border: 1px solid #000;
+  padding: 20px;
+  text-align: center;
+  @at-root .heading {
+    color: crimson;
+    font-size: 36px;
+  }
+}
+/*@at-root >> frame이라는 부모의 영향을 받지 않는 frame의 형제요소인 heading에게도 동일한 style을 줄 수 있음 */

@@ -1,0 +1,38 @@
+@charset "UTF-8";
+/* @import url("./style08.scss"); */
+/* $crimson: crimson;
+$black: #000;
+이렇게 밖에 쓰는건 전역 변수 
+
+.portfolio {
+  $crimson: crimson;
+  $black: #000;
+
+  color: $crimson;
+  h1 {
+    color: $black;
+  }
+}
+이렇게 클래스 안에 써주면 지역변수가 되어서 클래스 안에서만 쓸 수 있기 때문에 .headline은 이 변수를 찾아올 수 없다 
+
+.headline {
+  color: $crimson;
+  h1 {
+    color: $black;
+  }
+}
+ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}/*# sourceMappingURL=style08_1.css.map */

@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.figma {
+  position: relative;
+}
+.figma h1 {
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.figma .shape1 {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background: crimson;
+  border-radius: 50px 0 0 50px;
+}
+.figma .shape1::before {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  left: 100%;
+  background: coral;
+  border-radius: 0px 50px 50px 0;
+}
+.figma .shape2 {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background: plum;
+  top: 182%;
+  border-radius: 50px 0 0 50px;
+}
+.figma .shape2::before {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  background: skyblue;
+  left: 100%;
+}
+.figma .shape3 {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background: green;
+  top: 265%;
+  border-radius: 50px 0 50px 50px;
+}/*# sourceMappingURL=style01.css.map */

@@ -3,6 +3,10 @@
   src: url("./font/RobotoSlab-Regular.ttf");
 }
 @font-face {
+  font-family: Robotoserif;
+  src: url("./font/RobotoSerif-VariableFont_GRAD\,opsz\,wdth\,wght.ttf");
+}
+@font-face {
   font-family: Roboto;
   src: url("./font/Roboto-Regular.ttf");
 }

@@ -156,7 +156,16 @@ section .inner h1 {
 #pic {
   width: 45%;
   height: 600px;
-  background: #ccc;
+  border: 7px solid #f3c2cf;
+  border-radius: 45% 60% 25% 67%;
+  overflow: hidden;
+}
+#pic img {
+  display: block;
+  scale: 1.5;
+  top: 50%;
+  left: 50%;
+  transform: translate(25%, 25%);
 }
 #intro_cont_1 {
   width: 45%;
@@ -167,7 +176,8 @@ section .inner h1 {
   align-items: center;
   gap: 80px;
   text-align: center;
-  border: 1px solid saddlebrown;
+  box-shadow: 20px 20px 20px rgba(201, 194, 188, 0.5);
+  border-radius: 20px;
 }
 
 #about h2 {
@@ -439,6 +449,81 @@ section .inner02 h1 {
   .cover_cont > p > span {
     font-style: italic;
   }
+
+  /* section1 */
+  section .inner {
+    max-width: 1000px;
+  }
+  section .inner h1 {
+    font: bold 40px/1 "RobotoSlab";
+    margin-left: 100px;
+    margin-top: 100px;
+  }
+
+  .wrap {
+    width: 90%;
+    height: 760px;
+  }
+  #pic {
+    width: 45%;
+    height: 500px;
+    background: #ccc;
+  }
+  #intro_cont_1 {
+    width: 45%;
+    height: 500px;
+    gap: 60px;
+  }
+
+  #about h2 {
+    font: bold 28px/1 "Roboto";
+    margin-bottom: 25px;
+  }
+  #about p:nth-of-type(1) {
+    font: normal 20px/1 "NotosansKR";
+    margin-bottom: 10px;
+  }
+  #about p:nth-of-type(2) {
+    font: normal 20px/1 "NotosansKR";
+  }
+
+  #contact h2 {
+    font: bold 28px/1 "Roboto";
+    margin-bottom: 25px;
+  }
+  #contact p:nth-of-type(1) {
+    font: normal 20px/1 "Roboto";
+    margin-bottom: 10px;
+  }
+  #contact p:nth-of-type(2) {
+    font: normal 20px/1 "Roboto";
+  }
+
+  #character {
+    gap: 40px;
+  }
+  #characters h2 {
+    font: bold 28px/1 "Roboto";
+    margin-bottom: 25px;
+  }
+  .character01 p {
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    font-size: 18px;
+  }
+  .character02 p {
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    font-size: 18px;
+  }
+  .character03 p {
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    font-size: 18px;
+  }
 }
 
 /* === mobile === */
@@ -509,5 +594,81 @@ section .inner02 h1 {
   }
   .cover_cont > p > span {
     font-style: italic;
+  }
+  /* section1 */
+  section .inner {
+    max-width: 1000px;
+  }
+  section .inner h1 {
+    font: bold 30px/1 "RobotoSlab";
+    margin-left: 100px;
+    margin-top: 100px;
+  }
+
+  .wrap {
+    width: 90%;
+    height: 760px;
+    border: 1px solid #f00;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+  }
+  #pic {
+    width: 100%;
+    background: #ccc;
+  }
+  #intro_cont_1 {
+    width: 100%;
+    gap: 40px;
+  }
+
+  #about h2 {
+    font: bold 25px/1 "Roboto";
+    margin-bottom: 15px;
+  }
+  #about p:nth-of-type(1) {
+    font: normal 15px/1 "NotosansKR";
+    margin-bottom: 10px;
+  }
+  #about p:nth-of-type(2) {
+    font: normal 15px/1 "NotosansKR";
+  }
+
+  #contact h2 {
+    font: bold 25px/1 "Roboto";
+    margin-bottom: 15px;
+  }
+  #contact p:nth-of-type(1) {
+    font: normal 15px/1 "Roboto";
+    margin-bottom: 10px;
+  }
+  #contact p:nth-of-type(2) {
+    font: normal 15px/1 "Roboto";
+  }
+
+  #character {
+    gap: 40px;
+  }
+  #characters h2 {
+    font: bold 25px/1 "Roboto";
+    margin-bottom: 15px;
+  }
+  .character01 p {
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 15px;
+  }
+  .character02 p {
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 15px;
+  }
+  .character03 p {
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 15px;
   }
 }

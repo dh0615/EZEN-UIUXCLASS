@@ -1,12 +1,7 @@
-$(document).ready(function () {
-  // To use lazy loading, set a data-lazy attribute
-  // on your img tags and leave off the src
+const toggle = document.querySelector(".toggle");
+const gnb = document.querySelector("#gnb");
 
-  <img data-lazy="img/lazyfonz1.png" />;
-
-  $(".lazy").slick({
-    lazyLoad: "ondemand",
-    slidesToShow: 3,
-    slidesToScroll: 1,
-  });
+toggle.addEventListener("click", () => {
+  gnb.classList.toggle("active");
+  toggle.classList.toggle("active");
 });

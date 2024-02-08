@@ -22,10 +22,12 @@ body {
   font-size: 3rem;
   border: 3px solid royalblue;
 }
+
 .left {
   animation: ltr 1s linear;
   animation-fill-mode: both;
 }
+
 .right {
   animation: rtl 1s linear;
   animation-fill-mode: both;

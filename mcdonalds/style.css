@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  width: 100%;
+  margin: 0 auto;
+}
+header {
+  width: 70%;
+  height: 100px;
+  display: flex;
+  margin: 0 auto;
+  border: 1px solid #f00;
+  position: relative;
+}
+
+header .logo img {
+  width: 90px;
+  margin: 10px auto;
+}
+nav {
+  display: flex;
+}
+.nav-center ul {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  height: 100px;
+  line-height: 100px;
+}
+
+.nav-group ul {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  height: 100px;
+  line-height: 100px;
+  right: 0;
+}

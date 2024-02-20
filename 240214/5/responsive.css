@@ -230,6 +230,7 @@
     float: none;
     width: 100%;
   }
+<<<<<<< HEAD
   /* gototop */
   .gototop {
     border: 1px solid #fff;
@@ -249,4 +250,6 @@
     opacity: 1;
     transform: translateY(0);
   }
+=======
+>>>>>>> b87a1bfcc351caf26c7ace5c0f4b7147230337ee
 }

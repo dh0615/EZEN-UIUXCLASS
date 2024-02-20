@@ -393,7 +393,11 @@ input[id="tab3"]:checked ~ .tabs {
   position: absolute;
   z-index: 9999;
   top: 30px;
+<<<<<<< HEAD
   right: 30px;
+=======
+  right: 70px;
+>>>>>>> b87a1bfcc351caf26c7ace5c0f4b7147230337ee
   line-height: 25px;
   width: 25px;
   cursor: pointer;

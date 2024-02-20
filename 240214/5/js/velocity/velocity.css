@@ -54,7 +54,11 @@ Main Components
 }
 .cd-section:first-of-type > div::before {
   /* alert -> all scrolling effects are not visible on small devices */
+<<<<<<< HEAD
   content: "";
+=======
+  content: "Effects not visible on mobile!";
+>>>>>>> b87a1bfcc351caf26c7ace5c0f4b7147230337ee
   position: absolute;
   width: 100%;
   text-align: center;

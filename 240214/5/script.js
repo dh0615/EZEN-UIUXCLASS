@@ -57,15 +57,25 @@ $(".menu a").click(function () {
 });
 
 // scrollTo : header > trigger btn
+<<<<<<< HEAD
 $(".menu a, .gototop").click(function () {
+=======
+$(".menu a").click(function () {
+>>>>>>> b87a1bfcc351caf26c7ace5c0f4b7147230337ee
   $.scrollTo(this.hash || 0, 900);
 });
 
 // header scroll event
 $(window).scroll(function () {
   if ($(window).scrollTop() > 50) {
+<<<<<<< HEAD
     $("header, .gototop").addClass("active");
   } else {
     $("header, .gototop").removeClass("active");
+=======
+    $("header").addClass("active");
+  } else {
+    $("header").removeClass("active");
+>>>>>>> b87a1bfcc351caf26c7ace5c0f4b7147230337ee
   }
 });

@@ -44,14 +44,27 @@ console.log(`init(30, 20) : ${init(30, 20)}`); */
 // console.log(addNum(1, 3, 5, 7));
 // 함수의 매개번수는 왼쪽부터 차례로 가져감 앞에서부터 2개 가져가서 1+3 = 4 나옴
 
-const addNum = (
-  ...numbers /* 텍스트는 의미 x */ /* ...은 인수가 몇개든지 다 받아서 함수로 구현하겠다는 뜻 */ /* = 스프레드 연산자 (이거는 반드시 배열형태로 밖에 들어오지 못함) */
-) => {
-  let sum = 0; /* NaN으로 나오지 않게 하기 위해서 let sum = 0 써줌 (앞에 관련 내용 나옴) */
-  for (let number of numbers) /* for...of = 배열 (스프레드 연산자는 배열형태니까) */ {
-    sum += number;
-  }
-  return sum;
+// const addNum = (
+//   ...numbers /* 텍스트는 의미 x */ /* ...은 인수가 몇개든지 다 받아서 함수로 구현하겠다는 뜻 */ /* = 스프레드 연산자 (이거는 반드시 배열형태로 밖에 들어오지 못함) */
+// ) => {
+//   let sum = 0; /* NaN으로 나오지 않게 하기 위해서 let sum = 0 써줌 (앞에 관련 내용 나옴) */
+//   for (let number of numbers) /* for...of = 배열 (스프레드 연산자는 배열형태니까) */ {
+//     sum += number;
+//   }
+//   return sum;
+// };
+// console.log(addNum(1, 3));
+// console.log(addNum(1, 3, 5, 7));
+
+// ----------------------
+
+const displayFavorites = (
+  first,
+  second,
+  ...favorite
+) /* first라는 매개변수를 써줌으로써 first에 사과가 들어가고 second에 포도가 들어가고 나머지 전개 연산자 favorite에 복숭아가 들어감. */ => {
+  const str = `가장 좋아하는 과일은 ${first}`;
+  const str01 = `두번째로 좋아하는 과일은 ${second}`;
+  return str01;
 };
-console.log(addNum(1, 3));
-console.log(addNum(1, 3, 5, 7));
+console.log(displayFavorites("사과", "포도", "복숭아"));

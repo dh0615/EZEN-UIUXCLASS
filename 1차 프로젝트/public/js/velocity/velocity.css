@@ -49,9 +49,15 @@ Main Components
   }
 }
 
+<<<<<<< HEAD:1차 프로젝트/public/js/velocity/velocity.css
 /* .cd-section:first-of-type > div {
   background-color: #2b334f;
 } */
+=======
+.cd-section:first-of-type > div {
+  /* background-color: #2b334f; */
+}
+>>>>>>> b87a1bfcc351caf26c7ace5c0f4b7147230337ee:1차프로젝트/js/velocity/velocity.css
 .cd-section:first-of-type > div::before {
   /* alert -> all scrolling effects are not visible on small devices */
   content: "Effects not visible on mobile!";

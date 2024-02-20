@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#like {
+  background: url("./img/like_bg.jpg") top/cover no-repeat;
+  width: 100%;
+  height: 2000px;
+  position: relative;
+}
+#like::before {
+  content: "";
+  position: absolute;
+  filter: blur(8px) brightness(80%);
+}
+#like .like_img01 {
+  width: 300px;
+  position: absolute;
+  top: 20%;
+  left: 10%;
+}
+#like .like_img02 {
+  width: 200px;
+  position: absolute;
+  top: 30%;
+  right: 10%;
+}
+#like .like_img03 {
+  width: 300px;
+  position: absolute;
+  top: 60%;
+  left: 18%;
+}
+#like .like_img04 {
+  width: 300px;
+  position: absolute;
+  bottom: 0%;
+  right: 14%;
+}

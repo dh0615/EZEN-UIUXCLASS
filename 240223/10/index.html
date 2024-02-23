@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <script defer src="./script.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="container">
+      <h1>Book List..🎱</h1>
+      <form name="testForm" action="https://localhost:3000" method="post">
+        <ul id="bookInfo">
+          <li>
+            <label for="title">제 목</label>
+            <input id="title" type="text" />
+          </li>
+          <li>
+            <label for="author">저 자</label>
+            <input id="author" type="text" />
+          </li>
+        </ul>
+        <input class="btn" type="reset" value="취소하기.." />
+        <input class="btn" type="submit" value="저장하기.." />
+      </form>
+      <ul id="bookList">
+        <!-- <li>ㅎㅎ.. <span>삭제</span></li> -->
+      </ul>
+    </div>
+  </body>
+</html>

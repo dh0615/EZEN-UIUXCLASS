@@ -1,0 +1,60 @@
+@import "../common.scss";
+
+//==========PC==========//
+.wrap {
+  width: 100%;
+  margin: 0 auto;
+  border: 1px solid red;
+  #container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 75%;
+    border: 1px solid red;
+    #stocklist01 {
+      display: flex;
+      border: 1px solid #00f;
+      .stockcont01 {
+        /* width: 320px;
+        height: 460px; */
+        text-align: center;
+        .stock_img img {
+          width: 100%;
+        }
+        .stock_desc {
+          width: 100%;
+          h3 {
+            margin-top: 20px;
+          }
+        }
+      }
+    }
+    #stocklist02 {
+      display: flex;
+      border: 1px solid #0f0;
+    }
+    #stocklist03 {
+      display: flex;
+      border: 1px solid salmon;
+    }
+  }
+}
+
+//==========Tablet==========//
+@media screen and (max-width: 1200px) {
+  .wrap {
+    #container {
+      width: 100%;
+    }
+  }
+}
+
+//==========Mobile==========//
+@media screen and (max-width: 768px) {
+  .wrap {
+    min-width: 390px;
+    #container {
+    }
+  }
+}

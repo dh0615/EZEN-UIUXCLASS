@@ -7,36 +7,89 @@
   border: 1px solid red;
   #container {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 0 auto;
+    gap: 65px;
+    margin: 90px auto 100px;
     width: 75%;
     border: 1px solid red;
-    #stocklist01 {
+    position: relative;
+    #stocklist {
+      width: auto;
       display: flex;
-      border: 1px solid #00f;
-      .stockcont01 {
-        /* width: 320px;
-        height: 460px; */
+      justify-content: center;
+      align-items: center;
+      .stockcont {
+        width: 100%;
         text-align: center;
-        .stock_img img {
+        img {
           width: 100%;
         }
-        .stock_desc {
-          width: 100%;
-          h3 {
-            margin-top: 20px;
-          }
+        h3 {
+          margin: 20px auto 9px;
         }
       }
     }
-    #stocklist02 {
-      display: flex;
-      border: 1px solid #0f0;
+    #stocklist:last-child {
+      width: 100%;
+      justify-content: start;
+      .stockcont {
+        width: 25%;
+      }
     }
-    #stocklist03 {
-      display: flex;
-      border: 1px solid salmon;
+  }
+
+  #footer {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    #footer_slide {
+      /* position: absolute; */
+      .footer_slide_img {
+        display: flex;
+        height: 200px;
+        animation: footerslide 120s linear infinite;
+      }
+      @keyframes footerslide {
+        0% {
+          transform: translateX(0);
+        }
+        100% {
+          transform: translateX(-50%);
+        }
+      }
+    }
+    #footer_cont {
+      border: 1px solid #000;
+      text-align: center;
+      font-family: "Futura PT";
+      font: normal;
+      #footer_left {
+        float: left;
+        width: 50%;
+        border: 1px solid gold;
+        overflow: hidden;
+        padding: 150px 0 150px;
+        .footer_left_cont {
+          span {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            &:first-child {
+              margin-top: 24px;
+            }
+            &:last-child {
+              margin-top: 38px;
+            }
+          }
+        }
+      }
+      #footer_right {
+        float: right;
+        width: 50%;
+        border: 1px solid seagreen;
+      }
     }
   }
 }

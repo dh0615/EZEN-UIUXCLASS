@@ -132,37 +132,87 @@ body {
 }
 .wrap #container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 0 auto;
+  gap: 65px;
+  margin: 90px auto 100px;
   width: 75%;
   border: 1px solid red;
+  position: relative;
 }
-.wrap #container #stocklist01 {
+.wrap #container #stocklist {
+  width: auto;
   display: flex;
-  border: 1px solid #00f;
+  justify-content: center;
+  align-items: center;
 }
-.wrap #container #stocklist01 .stockcont01 {
-  /* width: 320px;
-  height: 460px; */
+.wrap #container #stocklist .stockcont {
+  width: 100%;
   text-align: center;
 }
-.wrap #container #stocklist01 .stockcont01 .stock_img img {
+.wrap #container #stocklist .stockcont img {
   width: 100%;
 }
-.wrap #container #stocklist01 .stockcont01 .stock_desc {
+.wrap #container #stocklist .stockcont h3 {
+  margin: 20px auto 9px;
+}
+.wrap #container #stocklist:last-child {
   width: 100%;
+  justify-content: start;
 }
-.wrap #container #stocklist01 .stockcont01 .stock_desc h3 {
-  margin-top: 20px;
+.wrap #container #stocklist:last-child .stockcont {
+  width: 25%;
 }
-.wrap #container #stocklist02 {
+.wrap #footer {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.wrap #footer #footer_slide {
+  /* position: absolute; */
+}
+.wrap #footer #footer_slide .footer_slide_img {
   display: flex;
-  border: 1px solid #0f0;
+  height: 200px;
+  animation: footerslide 120s linear infinite;
 }
-.wrap #container #stocklist03 {
+@keyframes footerslide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+.wrap #footer #footer_cont {
+  border: 1px solid #000;
+  text-align: center;
+  font-family: "Futura PT";
+  font: normal;
+}
+.wrap #footer #footer_cont #footer_left {
+  float: left;
+  width: 50%;
+  border: 1px solid gold;
+  overflow: hidden;
+  padding: 150px 0 150px;
+}
+.wrap #footer #footer_cont #footer_left .footer_left_cont span {
   display: flex;
-  border: 1px solid salmon;
+  justify-content: center;
+  align-items: center;
+}
+.wrap #footer #footer_cont #footer_left .footer_left_cont span:first-child {
+  margin-top: 24px;
+}
+.wrap #footer #footer_cont #footer_left .footer_left_cont span:last-child {
+  margin-top: 38px;
+}
+.wrap #footer #footer_cont #footer_right {
+  float: right;
+  width: 50%;
+  border: 1px solid seagreen;
 }
 
 @media screen and (max-width: 1200px) {

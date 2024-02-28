@@ -45,7 +45,7 @@
     position: relative;
     overflow: hidden;
     #footer_slide {
-      /* position: absolute; */
+      position: absolute;
       .footer_slide_img {
         display: flex;
         height: 200px;
@@ -61,34 +61,73 @@
       }
     }
     #footer_cont {
-      border: 1px solid #000;
       text-align: center;
-      font-family: "Futura PT";
-      font: normal;
+      margin-top: 200px;
       #footer_left {
         float: left;
         width: 50%;
-        border: 1px solid gold;
         overflow: hidden;
         padding: 150px 0 150px;
+        border-right: 1px solid #e0ded9;
+        h2 {
+          font: normal 18px/1 "Futura PT";
+        }
         .footer_left_cont {
           span {
             display: flex;
             justify-content: center;
             align-items: center;
+            font: normal 14px/1.3 "Futura PT";
             &:first-child {
               margin-top: 24px;
             }
             &:last-child {
               margin-top: 38px;
+              font: normal 11px/1 "Futura PT";
             }
           }
         }
       }
       #footer_right {
+        display: flex;
+        flex-direction: row;
         float: right;
         width: 50%;
-        border: 1px solid seagreen;
+        .footer_right_cont {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          width: 33.3%;
+          padding: 150px 0 150px;
+          h2 {
+            font: normal 18px/1 "Futura PT";
+            margin-bottom: 18px;
+          }
+          span {
+            font: normal 14px/1.3 "Futura PT";
+          }
+          .footer_right_cont_icon {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 12px;
+            margin-top: 34px;
+            i,
+            img {
+              width: 28px;
+              height: 28px;
+              line-height: 1.6rem;
+            }
+            i {
+              scale: 2;
+            }
+          }
+        }
+        .footer_right_cont:nth-child(2) {
+          span {
+            font: normal 14px/1.3 "Noto Sans KR";
+          }
+        }
       }
     }
   }

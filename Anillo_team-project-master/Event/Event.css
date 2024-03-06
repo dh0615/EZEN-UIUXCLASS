@@ -201,30 +201,59 @@ body {
 }
 .wrap #container #event_end {
   display: none;
+  /* .event_pager {
+    width: 100%;
+    text-align: center;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    a {
+      img {
+        width: 8px;
+        margin: 0 15px;
+      }
+    }
+    ul {
+      li {
+        display: inline-block;
+        font: normal 18px/1 "Futura PT";
+        color: #a0a0a0;
+        &:nth-child(1) {
+          color: #1e1e1e;
+          font-weight: 500;
+        }
+      }
+      .active {
+        font-weight: bold;
+        color: #1e1e1e;
+      }
+    }
+  } */
 }
-.wrap #container #event_end .event_pager {
+.wrap #container #event_end .page {
+  display: none;
+}
+.wrap #container #event_end #page1 {
+  display: block;
+}
+.wrap #container #event_end .pagination {
   width: 100%;
   text-align: center;
-  bottom: 0;
-  display: flex;
-  justify-content: center;
+  margin-top: 50px;
 }
-.wrap #container #event_end .event_pager a img {
+.wrap #container #event_end .pagination a img {
   width: 8px;
   margin: 0 15px;
 }
-.wrap #container #event_end .event_pager ul li {
-  display: inline-block;
+.wrap #container #event_end .pagination .page-button {
+  margin: 0 5px;
+  cursor: pointer;
+  border: none;
+  background: transparent;
   font: normal 18px/1 "Futura PT";
-  color: #a0a0a0;
 }
-.wrap #container #event_end .event_pager ul li:nth-child(1) {
-  color: #1e1e1e;
-  font-weight: 500;
-}
-.wrap #container #event_end .event_pager ul .active {
+.wrap #container #event_end .pagination .active {
   font-weight: bold;
-  color: #1e1e1e;
 }
 .wrap #footer {
   width: 100%;

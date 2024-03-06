@@ -16,3 +16,26 @@ for (let i = 0; i < endBtn.length; i++) {
     eventEnd.style.display = "block";
   });
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+  const pages = document.querySelectorAll(".page");
+  const buttons = document.querySelectorAll(".page-button");
+
+  buttons.forEach((button) => {
+    button.addEventListener("click", function () {
+      const pageNumber = this.dataset.page;
+      showPage(pageNumber);
+    });
+  });
+
+  function showPage(pageNumber) {
+    pages.forEach((page) => {
+      page.style.display = "none";
+    });
+
+    const selectedPage = document.querySelector(`#page${pageNumber}`);
+    if (selectedPage) {
+      selectedPage.style.display = "block";
+    }
+  }
+});

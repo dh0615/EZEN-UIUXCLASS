@@ -26,48 +26,45 @@
       <div id="container">
         <div class="eventwrap">
           <div id="event_going">
-            <section id="event">
-              <article class="eventcont">
-                <img src="./0.image/2nd_anniversary.jpg" alt="anniversary" />
-                <div class="event_desc">
-                  <h3>ANILLO 2ND ANNIVERSARY</h3>
-                  <p>아닐로 2주년 프로모션</p>
-                  <span> 2024.03.04 ~ 2024.04.01 </span>
-                </div>
-              </article>
-              <article class="eventcont">
-                <img
-                  src="./0.image/recommendation_event.jpg"
-                  alt="recommendation"
-                />
-                <div class="event_desc">
-                  <h3>ANILLO RECOMMENDATION EVENT</h3>
-                  <p>아닐로 친구 추천 이벤트</p>
-                  <span> 2024.02.12 ~ </span>
-                </div>
-              </article>
-              <article class="eventcont">
-                <img
-                  src="./0.image/kakao talk channel event.jpg"
-                  alt="kakaochannel"
-                />
-                <div class="event_desc">
-                  <h3>KAKAO TALK CHANNEL EVENT</h3>
-                  <p>카카오톡 채널 추가 이벤트</p>
-                  <span>2022.03.17 ~ </span>
-                </div>
-              </article>
-            </section>
-
-            <div class="event_pager">
+            <div>
+              <section id="event">
+                <article class="eventcont">
+                  <img src="./0.image/2nd_anniversary.jpg" alt="anniversary" />
+                  <div class="event_desc">
+                    <h3>ANILLO 2ND ANNIVERSARY</h3>
+                    <p>아닐로 2주년 프로모션</p>
+                    <span> 2024.03.04 ~ 2024.04.01 </span>
+                  </div>
+                </article>
+                <article class="eventcont">
+                  <img
+                    src="./0.image/recommendation_event.jpg"
+                    alt="recommendation"
+                  />
+                  <div class="event_desc">
+                    <h3>ANILLO RECOMMENDATION EVENT</h3>
+                    <p>아닐로 친구 추천 이벤트</p>
+                    <span> 2024.02.12 ~ </span>
+                  </div>
+                </article>
+                <article class="eventcont">
+                  <img
+                    src="./0.image/kakao talk channel event.jpg"
+                    alt="kakaochannel"
+                  />
+                  <div class="event_desc">
+                    <h3>KAKAO TALK CHANNEL EVENT</h3>
+                    <p>카카오톡 채널 추가 이벤트</p>
+                    <span>2022.03.17 ~ </span>
+                  </div>
+                </article>
+              </section>
+            </div>
+            <div class="pagenumber">
               <a href="#">
                 <img src="./0.image/이전 페이지.png" alt="prev" />
               </a>
-              <ul>
-                <li>
-                  <a href="">1</a>
-                </li>
-              </ul>
+              <button class="page-button" data-page="1">1</button>
               <a href="#">
                 <img src="./0.image/다음 페이지.png" alt="next" />
               </a>
@@ -315,17 +312,27 @@
                 </article>
               </section>
             </div>
-            <div class="pagination">
-              <a href="#">
-                <img src="./0.image/이전 페이지.png" alt="prev" />
+            <div class="pagenumber">
+              <a href="">
+                <img
+                  id="prev"
+                  class="arrow"
+                  src="./0.image/이전 페이지.png"
+                  alt="prev"
+                />
               </a>
               <button class="page-button" data-page="1">1</button>
               <button class="page-button" data-page="2">2</button>
               <button class="page-button" data-page="3">3</button>
               <button class="page-button" data-page="4">4</button>
               <button class="page-button" data-page="5">5</button>
-              <a href="#">
-                <img src="./0.image/다음 페이지.png" alt="next" />
+              <a href="">
+                <img
+                  id="next"
+                  class="arrow"
+                  src="./0.image/다음 페이지.png"
+                  alt="next"
+                />
               </a>
             </div>
           </div>
@@ -362,7 +369,12 @@
                 <p><b>PERMIT NUMBER&nbsp;</b></p>
                 <p>301-87-00296 Mediquitous Co., Ltd.</p>
                 <p></p>
-                <p><a href="#">[OPERATOR INFORMATION]</a></p>
+                <p>
+                  <a
+                    href="http://www.ftc.go.kr/bizCommPop.do?wrkr_no=3018700296"
+                    >[OPERATOR INFORMATION]</a
+                  >
+                </p>
               </span>
               <span>
                 <p><b>ADDRESS&nbsp;</b></p>

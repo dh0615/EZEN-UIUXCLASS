@@ -176,84 +176,37 @@ body {
 .wrap #container #event_end #event .eventcont span {
   font: 400 14px/1.4 "Futura PT";
 }
-.wrap #container #event_going .event_pager,
-.wrap #container #event_end .event_pager {
-  width: 100%;
-  text-align: center;
-  bottom: 0;
-  display: flex;
-  justify-content: center;
-}
-.wrap #container #event_going .event_pager a img,
-.wrap #container #event_end .event_pager a img {
-  width: 8px;
-  margin: 0 15px;
-}
-.wrap #container #event_going .event_pager ul li,
-.wrap #container #event_end .event_pager ul li {
-  display: inline-block;
-  font: 500 18px/1 "Futura PT";
-}
-.wrap #container #event_going .event_pager ul .active,
-.wrap #container #event_end .event_pager ul .active {
-  font-weight: bold;
-  color: #1e1e1e;
-}
-.wrap #container #event_end {
-  display: none;
-  /* .event_pager {
-    width: 100%;
-    text-align: center;
-    bottom: 0;
-    display: flex;
-    justify-content: center;
-    a {
-      img {
-        width: 8px;
-        margin: 0 15px;
-      }
-    }
-    ul {
-      li {
-        display: inline-block;
-        font: normal 18px/1 "Futura PT";
-        color: #a0a0a0;
-        &:nth-child(1) {
-          color: #1e1e1e;
-          font-weight: 500;
-        }
-      }
-      .active {
-        font-weight: bold;
-        color: #1e1e1e;
-      }
-    }
-  } */
-}
-.wrap #container #event_end .page {
-  display: none;
-}
-.wrap #container #event_end #page1 {
-  display: block;
-}
-.wrap #container #event_end .pagination {
+.wrap #container #event_going .pagenumber,
+.wrap #container #event_end .pagenumber {
   width: 100%;
   text-align: center;
   margin-top: 50px;
 }
-.wrap #container #event_end .pagination a img {
+.wrap #container #event_going .pagenumber a img,
+.wrap #container #event_end .pagenumber a img {
   width: 8px;
   margin: 0 15px;
 }
-.wrap #container #event_end .pagination .page-button {
+.wrap #container #event_going .pagenumber .page-button,
+.wrap #container #event_end .pagenumber .page-button {
   margin: 0 5px;
   cursor: pointer;
   border: none;
   background: transparent;
   font: normal 18px/1 "Futura PT";
 }
-.wrap #container #event_end .pagination .active {
-  font-weight: bold;
+.wrap #container #event_going .pagenumber .active,
+.wrap #container #event_end .pagenumber .active {
+  font-weight: 500;
+}
+.wrap #container #event_end {
+  display: none;
+}
+.wrap #container #event_end .page {
+  display: none;
+}
+.wrap #container #event_end #page1 {
+  display: block;
 }
 .wrap #footer {
   width: 100%;

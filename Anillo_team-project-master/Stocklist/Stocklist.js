@@ -10,14 +10,12 @@ for (let i = 0; i < onlineBtn.length; i++) {
   });
 }
 
-
 for (let i = 0; i < offlineBtn.length; i++) {
   offlineBtn[i].addEventListener("click", () => {
     onlinePage.style.display = "none";
     offlinePage.style.display = "block";
   });
 }
-
 
 const moreOne = document.querySelector("#moreone");
 const moreTwo = document.querySelector("#moretwo");
@@ -26,13 +24,11 @@ const detailTwo = document.querySelector(".stockcont_chicor_inner");
 
 moreOne.addEventListener("click", function () {
   detailOne.classList.toggle("view");
-  const buttonText = detailOne.classList.contains('view') ? 'CLOSE' : 'MORE';
+  const buttonText = detailOne.classList.contains("view") ? "CLOSE" : "MORE";
   moreOne.textContent = buttonText;
 });
 moreTwo.addEventListener("click", function () {
   detailTwo.classList.toggle("view");
-  const buttonText = detailTwo.classList.contains('view') ? 'CLOSE' : 'MORE';
+  const buttonText = detailTwo.classList.contains("view") ? "CLOSE" : "MORE";
   moreTwo.textContent = buttonText;
 });
-
-

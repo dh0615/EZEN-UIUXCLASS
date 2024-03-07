@@ -48,67 +48,7 @@
           }
         }
       }
-      .event_pager {
-        width: 100%;
-        text-align: center;
-        bottom: 0;
-        display: flex;
-        justify-content: center;
-        a {
-          img {
-            width: 8px;
-            margin: 0 15px;
-          }
-        }
-        ul {
-          li {
-            display: inline-block;
-            font: 500 18px/1 "Futura PT";
-          }
-          .active {
-            font-weight: bold;
-            color: #1e1e1e;
-          }
-        }
-      }
-    }
-    #event_end {
-      display: none;
-      /* .event_pager {
-        width: 100%;
-        text-align: center;
-        bottom: 0;
-        display: flex;
-        justify-content: center;
-        a {
-          img {
-            width: 8px;
-            margin: 0 15px;
-          }
-        }
-        ul {
-          li {
-            display: inline-block;
-            font: normal 18px/1 "Futura PT";
-            color: #a0a0a0;
-            &:nth-child(1) {
-              color: #1e1e1e;
-              font-weight: 500;
-            }
-          }
-          .active {
-            font-weight: bold;
-            color: #1e1e1e;
-          }
-        }
-      } */
-      .page {
-        display: none;
-      }
-      #page1 {
-        display: block;
-      }
-      .pagination {
+      .pagenumber {
         width: 100%;
         text-align: center;
         margin-top: 50px;
@@ -126,8 +66,17 @@
           font: normal 18px/1 "Futura PT";
         }
         .active {
-          font-weight: bold;
+          font-weight: 500;
         }
+      }
+    }
+    #event_end {
+      display: none;
+      .page {
+        display: none;
+      }
+      #page1 {
+        display: block;
       }
     }
   }

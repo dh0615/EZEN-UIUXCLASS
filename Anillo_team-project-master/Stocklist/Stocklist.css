@@ -141,35 +141,43 @@ body {
   border: 1px solid red;
   position: relative;
 }
-.wrap #container #stocklist_online #stocklist, .wrap #container #stocklist_offline #stocklist {
+.wrap #container #stocklist_online #stocklist,
+.wrap #container #stocklist_offline #stocklist {
   width: auto;
   display: flex;
   justify-content: center;
 }
-.wrap #container #stocklist_online #stocklist .stockcont, .wrap #container #stocklist_offline #stocklist .stockcont {
+.wrap #container #stocklist_online #stocklist .stockcont,
+.wrap #container #stocklist_offline #stocklist .stockcont {
   width: 100%;
   text-align: center;
   margin-bottom: 65px;
 }
-.wrap #container #stocklist_online #stocklist .stockcont img, .wrap #container #stocklist_offline #stocklist .stockcont img {
+.wrap #container #stocklist_online #stocklist .stockcont img,
+.wrap #container #stocklist_offline #stocklist .stockcont img {
   width: 100%;
 }
-.wrap #container #stocklist_online #stocklist .stockcont h3, .wrap #container #stocklist_offline #stocklist .stockcont h3 {
+.wrap #container #stocklist_online #stocklist .stockcont h3,
+.wrap #container #stocklist_offline #stocklist .stockcont h3 {
   margin: 20px auto 9px;
   font: 500 18px/1.8 "Futura PT";
 }
-.wrap #container #stocklist_online #stocklist .stockcont p, .wrap #container #stocklist_offline #stocklist .stockcont p {
+.wrap #container #stocklist_online #stocklist .stockcont p,
+.wrap #container #stocklist_offline #stocklist .stockcont p {
   font: normal 14px/1 "Futura PT";
   color: #a0a0a0;
 }
-.wrap #container #stocklist_online #stocklist .stockcont:nth-child(3) h3, .wrap #container #stocklist_offline #stocklist .stockcont:nth-child(3) h3 {
+.wrap #container #stocklist_online #stocklist .stockcont:nth-child(3) h3,
+.wrap #container #stocklist_offline #stocklist .stockcont:nth-child(3) h3 {
   font: 500 18px/1.8 "Noto Sans KR";
 }
-.wrap #container #stocklist_online #stocklist:last-child, .wrap #container #stocklist_offline #stocklist:last-child {
+.wrap #container #stocklist_online #stocklist:last-child,
+.wrap #container #stocklist_offline #stocklist:last-child {
   width: 100%;
   justify-content: start;
 }
-.wrap #container #stocklist_online #stocklist:last-child .stockcont, .wrap #container #stocklist_offline #stocklist:last-child .stockcont {
+.wrap #container #stocklist_online #stocklist:last-child .stockcont,
+.wrap #container #stocklist_offline #stocklist:last-child .stockcont {
   width: 25%;
 }
 .wrap #container #stocklist_offline {
@@ -187,7 +195,8 @@ body {
   cursor: pointer;
   margin-bottom: 9px;
 }
-.wrap #container #stocklist_offline .stockcont .stockcont_ananti_inner, .wrap #container #stocklist_offline .stockcont .stockcont_chicor_inner {
+.wrap #container #stocklist_offline .stockcont .stockcont_ananti_inner,
+.wrap #container #stocklist_offline .stockcont .stockcont_chicor_inner {
   margin: 15px;
   height: 0;
   overflow: hidden;
@@ -196,16 +205,20 @@ body {
   transform: translateY(-20px);
   transition: all 0.5s;
 }
-.wrap #container #stocklist_offline .stockcont .stockcont_ananti_inner .stockcont_inner, .wrap #container #stocklist_offline .stockcont .stockcont_chicor_inner .stockcont_inner {
+.wrap #container #stocklist_offline .stockcont .stockcont_ananti_inner .stockcont_inner,
+.wrap #container #stocklist_offline .stockcont .stockcont_chicor_inner .stockcont_inner {
   margin-top: 15px;
 }
-.wrap #container #stocklist_offline .stockcont .stockcont_ananti_inner .stockcont_inner:nth-child(1), .wrap #container #stocklist_offline .stockcont .stockcont_chicor_inner .stockcont_inner:nth-child(1) {
+.wrap #container #stocklist_offline .stockcont .stockcont_ananti_inner .stockcont_inner:nth-child(1),
+.wrap #container #stocklist_offline .stockcont .stockcont_chicor_inner .stockcont_inner:nth-child(1) {
   margin-top: 0px;
 }
-.wrap #container #stocklist_offline .stockcont .stockcont_ananti_inner .stockcont_inner h4, .wrap #container #stocklist_offline .stockcont .stockcont_chicor_inner .stockcont_inner h4 {
+.wrap #container #stocklist_offline .stockcont .stockcont_ananti_inner .stockcont_inner h4,
+.wrap #container #stocklist_offline .stockcont .stockcont_chicor_inner .stockcont_inner h4 {
   font: 14px/1.4 "Noto Sans KR";
 }
-.wrap #container #stocklist_offline .stockcont .stockcont_ananti_inner .stockcont_inner p, .wrap #container #stocklist_offline .stockcont .stockcont_chicor_inner .stockcont_inner p {
+.wrap #container #stocklist_offline .stockcont .stockcont_ananti_inner .stockcont_inner p,
+.wrap #container #stocklist_offline .stockcont .stockcont_chicor_inner .stockcont_inner p {
   font: 11px/1.1 "Noto Sans KR";
   color: #a0a0a0;
 }
@@ -251,13 +264,13 @@ body {
   border-right: 1px solid #e0ded9;
 }
 .wrap #footer #footer_cont #footer_left h2 {
-  font: normal 1.125rem/1 "Futura PT";
+  font: normal 18px/1 "Futura PT";
 }
 .wrap #footer #footer_cont #footer_left .footer_left_cont span {
   display: flex;
   justify-content: center;
   align-items: center;
-  font: normal 0.825rem/1.3 "Futura PT";
+  font: normal 13px/1.3 "Futura PT";
 }
 .wrap #footer #footer_cont #footer_left .footer_left_cont span:first-child {
   margin-top: 24px;
@@ -361,35 +374,43 @@ body {
   .wrap #container {
     gap: 0px;
   }
-  .wrap #container #stocklist_online #stocklist, .wrap #container #stocklist_offline #stocklist {
+  .wrap #container #stocklist_online #stocklist,
+  .wrap #container #stocklist_offline #stocklist {
     width: auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
-  .wrap #container #stocklist_online #stocklist .stockcont, .wrap #container #stocklist_offline #stocklist .stockcont {
+  .wrap #container #stocklist_online #stocklist .stockcont,
+  .wrap #container #stocklist_offline #stocklist .stockcont {
     width: 100%;
     text-align: center;
     padding-bottom: 50px;
   }
-  .wrap #container #stocklist_online #stocklist .stockcont img, .wrap #container #stocklist_offline #stocklist .stockcont img {
+  .wrap #container #stocklist_online #stocklist .stockcont img,
+  .wrap #container #stocklist_offline #stocklist .stockcont img {
     width: 100%;
   }
-  .wrap #container #stocklist_online #stocklist .stockcont h3, .wrap #container #stocklist_offline #stocklist .stockcont h3 {
+  .wrap #container #stocklist_online #stocklist .stockcont h3,
+  .wrap #container #stocklist_offline #stocklist .stockcont h3 {
     margin: 20px auto 9px;
     font: 500 18px/1.8 "Futura PT";
   }
-  .wrap #container #stocklist_online #stocklist .stockcont p, .wrap #container #stocklist_offline #stocklist .stockcont p {
-    font: normal 14px/1 "Futura PT";
+  .wrap #container #stocklist_online #stocklist .stockcont p,
+  .wrap #container #stocklist_offline #stocklist .stockcont p {
+    font: normal 14px/1.4 "Futura PT";
     color: #a0a0a0;
   }
-  .wrap #container #stocklist_online #stocklist .stockcont:nth-child(3) h3, .wrap #container #stocklist_offline #stocklist .stockcont:nth-child(3) h3 {
+  .wrap #container #stocklist_online #stocklist .stockcont:nth-child(3) h3,
+  .wrap #container #stocklist_offline #stocklist .stockcont:nth-child(3) h3 {
     font: 500 18px/1.8 "Noto Sans KR";
   }
-  .wrap #container #stocklist_online #stocklist:last-child, .wrap #container #stocklist_offline #stocklist:last-child {
+  .wrap #container #stocklist_online #stocklist:last-child,
+  .wrap #container #stocklist_offline #stocklist:last-child {
     width: 100%;
     justify-content: start;
   }
-  .wrap #container #stocklist_online #stocklist:last-child .stockcont, .wrap #container #stocklist_offline #stocklist:last-child .stockcont {
+  .wrap #container #stocklist_online #stocklist:last-child .stockcont,
+  .wrap #container #stocklist_offline #stocklist:last-child .stockcont {
     width: 100%;
   }
   .wrap #container #stocklist_offline {
@@ -412,10 +433,10 @@ body {
     border-bottom: 1px solid #e0ded9;
   }
   .wrap #footer #footer_cont #footer_left h2 {
-    font: normal 1.125rem/1 "Futura PT";
+    font: normal 18px/1 "Futura PT";
   }
   .wrap #footer #footer_cont #footer_left .footer_left_cont span {
-    font: normal 0.825rem/1.3 "Futura PT";
+    font: normal 13px/1.3 "Futura PT";
   }
   .wrap #footer #footer_cont #footer_left .footer_left_cont span:last-child {
     display: none;

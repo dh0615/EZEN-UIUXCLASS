@@ -35,14 +35,13 @@ const changeImg = (direction) => {
 
 arrows.forEach((arrow) => {
   arrow.addEventListener("click", (e) => {
-    /* console.log(e); */
     const direction = e.target.id === "left" ? "prev" : "next";
     changeImg(direction);
   });
 });
 
 const autoSlide = () => {
-  timer /* 전역요소로 쓰기위해 let이나 const 안준것.. */ = setInterval(() => {
+  timer = setInterval(() => {
     changeImg("next");
   }, 3000);
 };
@@ -79,7 +78,7 @@ const pagerChange = (e) => {
   const target = e.target.dataset.index;
   reset();
   for (let i = 0; i < pagers.length; i++) {
-    if (target === i) {
+    if (target == i) {
       pagers[i].classList.add("active");
       src.value = `./imgs/${imgs[i]}`;
     }

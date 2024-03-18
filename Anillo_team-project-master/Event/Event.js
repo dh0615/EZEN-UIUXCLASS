@@ -17,55 +17,25 @@ for (let i = 0; i < endBtn.length; i++) {
   });
 }
 
-/* function showPage(pageNumber) {
-  const pages = document.querySelectorAll(".page");
-  pages.forEach((page) => {
-    page.style.display = "none";
-  });
-
-  const selectedPage = document.querySelector(`#page${pageNumber}`);
-  if (selectedPage) {
-    selectedPage.style.display = "block";
-  }
-}
-
-function updateButtonStyle(selectedButton) {
-  const buttons = document.querySelectorAll(".page-button");
+function buttonOn(clickedButton) {
   buttons.forEach((button) => {
     button.classList.remove("active");
   });
-
-  selectedButton.classList.add("active");
+  clickedButton.classList.add("active");
 }
 
-const buttons = document.querySelectorAll(".page-button");
-buttons.forEach((button) => {
-  button.addEventListener("click", (e) => {
-    const clickedButton = e.target;
-    const pageNumber = clickedButton.textContent;
-    showPage(pageNumber);
-    updateButtonStyle(clickedButton);
-  });
-});
- */
 const buttons = document.querySelectorAll(".page-button");
 buttons.forEach((button) => {
   button.addEventListener("click", (e) => {
     const clickedButton = e.target;
     const pageNumber = clickedButton.innerText;
     pageOn(pageNumber);
-
-    if (clickedButton) {
-      button.classList.add("active");
-      if (pageSelected) {
-        button.classList.remove("active");
-      }
-    }
+    buttonOn(clickedButton);
   });
 });
 
 const pageOn = (pageNumber) => {
-  const pages = document.querySelectorAll(".page");
+  const pages = document.querySelectorAll(".event_page");
   pages.forEach((page) => {
     page.style.display = "none";
   });
@@ -75,20 +45,40 @@ const pageOn = (pageNumber) => {
   }
 };
 
-const arrows = document.querySelector(".arrow");
-arrows.forEach((arrow) => {
-  arrow.addEventListener("click", (e) => {
-    let i = 0;
-    if (e.target.id === prev) {
-      i--;
-      if (i < 0) {
-        i = pages.length - 1;
-      }
-    } else if (e.target.id === next) {
-      i++;
-      if (i > pages.length) {
-        i = 0;
-      }
+const arrows = document.querySelectorAll(".arrow");
+const pages = document.querySelectorAll(".event_page");
+const nextButton = document.querySelector("#right");
+const prevButton = document.querySelector("#left");
+let i = 0;
+const changePage = (direction) => {
+  if (direction === "next") {
+    i++;
+    if (i >= pages.length) {
+      i = 0;
     }
+    reset();
+    buttons[i].classList.add("active");
+  } else if (direction === "prev") {
+    i--;
+    if (i < 0) {
+      i = pages.length - 1;
+    }
+    reset();
+    buttons[i].classList.add("active");
+  }
+};
+
+/* arrows.forEach((arrow) => {
+  arrow.addEventListener("click", (e) => {
+    const direction = e.target.id === "left" ? "prev" : "next";
+    changePage(direction);
+  });
+}); */
+
+/* arrows.forEach((arrow) => {
+  arrow.addEventListener("click", function () {
+    const direction = e.target.id === "left" ? "prev" : "next";
+    changePage(direction);
   });
 });
+ */

@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+input[type="text"] {
+  width: 70px;
+  height: 30px;
+  border: 2px solid #ccc;
+}
+input[type="text"]:focus {
+  outline: none;
+}
+input[type="submit"] {
+  padding: 5px 10px;
+}
+
+#result {
+  margin-top: 20px;
+  padding: 5px 10px;
+  width: 50%;
+  height: 30px;
+  border: 1px solid #ccc;
+  background: #eee;
+}

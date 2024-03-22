@@ -1,0 +1,15 @@
+@import url("./reset.css");
+
+/* body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+} */
+
+canvas {
+  /* border: 1px solid #f4c5cf; */
+  /* border: 1px solid paleturquoise */
+  /* width: 400px;
+  height: 300px; */
+}
